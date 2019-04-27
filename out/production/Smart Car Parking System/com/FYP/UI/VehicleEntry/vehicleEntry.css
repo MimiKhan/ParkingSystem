@@ -1,0 +1,12 @@
+
+
+#imageViewPane{
+    -fx-border-color: cadetblue;
+    -fx-border-style: solid;
+    -fx-border-width: 5;
+}
+#videoViewPane{
+    -fx-border-color: cadetblue;
+    -fx-border-style: solid;
+    -fx-border-width: 5;
+}

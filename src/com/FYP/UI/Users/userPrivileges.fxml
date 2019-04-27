@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="400.0" prefWidth="600.0" stylesheets="/com/FYP/UI/Users/userPrivileges.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.FYP.UI.Users.UserPrivilegesController">
+   <VBox layoutX="440.0" layoutY="50.0" prefHeight="240.0" prefWidth="150.0" spacing="25.0" AnchorPane.bottomAnchor="110.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+      <padding>
+         <Insets left="5.0" right="5.0" top="10.0" />
+      </padding>
+      <JFXTextField fx:id="usernameTF" focusColor="white" labelFloat="true" prefHeight="35.0" promptText="Enter Username" style="-fx-text-fill: white" unFocusColor="#0066cc" />
+      <JFXPasswordField fx:id="passwordPF" focusColor="white" labelFloat="true" onKeyPressed="#handleEnterKey" prefHeight="35.0" promptText="Enter Password" style="-fx-text-fill: white" unFocusColor="#0066cc" />
+      <JFXButton buttonType="RAISED" onAction="#handleAddButton" prefHeight="40.0" prefWidth="140.0" ripplerFill="WHITE" style="-fx-background-color: #0066cc;" text="Add User" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="15.0" layoutY="70.0" onAction="#handleDeleteButton" prefHeight="40.0" prefWidth="140.0" ripplerFill="WHITE" style="-fx-background-color: #0066cc;" text="Delete User" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="18.0" />
+         </font>
+      </JFXButton>
+   </VBox>
+   <TableView fx:id="tableView" layoutX="14.0" layoutY="14.0" prefHeight="370.0" prefWidth="425.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+      <columns>
+         <TableColumn fx:id="usernameCol" prefWidth="75.0" text="Username" />
+         <TableColumn fx:id="passwordCol" prefWidth="75.0" text="Password" />
+      </columns>
+      <columnResizePolicy>
+         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+      </columnResizePolicy>
+   </TableView>
+</AnchorPane>

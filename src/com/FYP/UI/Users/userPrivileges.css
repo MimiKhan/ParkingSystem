@@ -1,0 +1,54 @@
+
+#rootPane{
+    -fx-background-color: darkslategray;
+}
+
+.label{
+    -fx-text-fill: green;
+}
+
+.jfx-button{
+    -fx-background-color: #0066cc;
+    -fx-text-fill: white;
+}
+
+.jfx-button:hover{
+    -fx-background-color: white;
+    -fx-text-fill: #0066cc;
+}
+
+#exitButton{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+#exitButton:hover{
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
+
+#minimizeButton{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+#minimizeButton:hover{
+    -fx-background-color: darkgray;
+    -fx-text-fill: black;
+}
+
+.table-row-cell:empty{
+    -fx-background-color: white;
+}
+
+.table-row-cell:empty .table-cell{
+    -fx-border-width: 0px;
+}
+
+.table-row-cell:odd:filled{
+    -fx-background-color: lightblue;
+}
+
+.table-row-cell:even:filled{
+    -fx-background-color: lightgray;
+}

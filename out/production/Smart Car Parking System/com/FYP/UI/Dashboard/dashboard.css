@@ -1,0 +1,20 @@
+
+
+#rootPane{
+
+    -fx-background-image: url("/com/FYP/resources/forDashboard.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 800 600;
+    -fx-background-position: center center;
+    -fx-effect: dropShadow(three-pass-box, black, 30, 0.5, 0, 0);
+
+}
+.button{
+    -fx-background-color: white;
+    -fx-text-fill: #0066cc;
+}
+
+.button:hover{
+    -fx-background-color: #0066cc;
+    -fx-text-fill: white;
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="400.0" prefWidth="400.0" stylesheets="/com/FYP/UI/Login/Login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.FYP.UI.Login.LoginController">
+   <VBox alignment="CENTER" layoutX="80.0" layoutY="126.0" prefHeight="150.0" prefWidth="240.0" spacing="20.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="126.0">
+      <HBox spacing="10.0">
+         <FontAwesomeIconView fill="#0066cc" glyphName="USER" size="30" />
+         <JFXTextField fx:id="usernameField" focusColor="#0066cc" labelFloat="true" prefHeight="40.0" prefWidth="200.0" promptText="Username" style="-fx-text-fill: #0066cc" unFocusColor="#0066cc" />
+      </HBox>
+      <HBox spacing="10.0">
+         <FontAwesomeIconView fill="#0066cc" glyphName="KEY" size="30" />
+         <JFXPasswordField fx:id="passwordField" focusColor="#0066cc" labelFloat="true" onAction="#handleEnterKey" prefHeight="40.0" prefWidth="200.0" promptText="Password" style="-fx-text-fill: #0066cc" unFocusColor="#0066cc" />
+      </HBox>
+
+   </VBox>
+   <HBox layoutY="300.0" prefHeight="35.0" prefWidth="400.0" spacing="20.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <padding>
+         <Insets left="15.0" right="15.0" />
+      </padding>
+      <JFXButton fx:id="loginButton" onAction="#handleLoginButton" prefHeight="35.0" prefWidth="175.0" text="Login" />
+      <JFXButton fx:id="closeButton" layoutX="10.0" layoutY="10.0" onAction="#handleCloseButton" prefHeight="35.0" prefWidth="175.0" text="Close" />
+   </HBox>
+   <Label layoutX="80.0" layoutY="90.0" prefHeight="36.0" prefWidth="135.0" text="Login">
+      <font>
+         <Font name="Comic Sans MS Bold Italic" size="25.0" />
+      </font>
+   </Label>
+   <!--<FontAwesomeIconView glyphName="USERS" layoutX="168.0" layoutY="99.0" size="60" />-->
+</AnchorPane>
